@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tugas Pemrograman WEB 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+    				
+    				#listnav:hover {
+        background-color: #333232;
+        color: white;
+        background-image: url("https://i.pinimg.com/originals/f3/68/a8/f368a8f642d9aa7cb6ac1d4220ff3292.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      #listnav {
+      color: black;
+        background-image: url("https://wallpaperaccess.com/full/358800.jpg");
+        background-attachment: fixed;
+      }
+
+      #profilku, #programstudiku, #kontakku {
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+      
+      
+      #profilku {
+        background-image: url("https://i.pinimg.com/originals/f3/68/a8/f368a8f642d9aa7cb6ac1d4220ff3292.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      #myportofolio {
+        background-image: url("https://wallpaperaccess.com/full/1657858.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      #programstudiku {
+        background-image: url("https://i.pinimg.com/originals/f3/68/a8/f368a8f642d9aa7cb6ac1d4220ff3292.jpg");
+        background-size: cover;
+        background-attachment: fixed;   
+      }
+
+      #kontakku {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdQTKRWxqskBXPKXvSsUV6gAaqk9sW6fyr2g&usqp=CAU");
+        background-size: cover;
+        background-attachment: fixed;   
+      }
+
+    </style>
+  </head>
+  <body class="text-center">
+  				<button id="darkmode" class="bg-dark border-0 text-light d-block w-100 sticky-top">Mode Gelap</button>
+    <h1 id="myportofolio" class="p-5">My Portofolio</h1>
+    <ul class="p-0 d-inline">
+      <a class="text-dark text-decoration-none" href="#profilku"><li class="border-bottom" id="listnav">Profil</li></a>
+      <a class="text-dark text-decoration-none" href="#programstudiku"><li id="listnav">Program Studi</li></a>
+      <a class="text-dark text-decoration-none" href="#kontakku"><li class="border-top border-bottom" id="listnav">Kontak</li></a>
+    </ul>
+    <div class="text-white" id="profilku">
+      <h2>Profil</h2>
+      <div>
+        <img class="rounded-circle" id="fotoku" width="150px" src="https://i.ibb.co/rHgd5LX/instadp-muh-amirul-haq-full-size.jpg">
+      </div>
+      <ul class="d-inline">
+        <li>Nama : Muhammad Amirul Haq</li>
+        <li>Tempat/tanggal lahir : Makassar, 8 April 2002</li>
+        <li>Alamat : Btn. Mangga Tiga Blk. F2 No.32</li>
+        <li>Jenis Kelamin : Laki-laki</li>
+        <li>Agama : Islam</li>
+      </ul>
+    </div>
+    <div class="text-white" id="programstudiku">
+      <h2>Program Studi</h2>
+      <div>
+        <img width="150px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRjJ9806NS2BT2RujEOc6ur19U4jNw9iIytw&usqp=CAU">
+      </div>
+      <ul class="d-inline">
+        <li>Instutusi Pendidikan : Universitas Hasanuddin</li>
+        <li>Nama Program Studi : Sistem Informasi</li>
+        <li>Akreditasi Program Studi : B</li>
+        <li>NIM : H071201079</li>
+      </ul>
+    </div>
+    <div id="kontakku" class="text-white">
+      <h2>Kontak</h2>
+      <ul class="d-inline">
+        <li>No. Tlp : +6283141411042</li>
+        <li>Gmail : Muhammadamirulhaq66@gmail.com</li>
+        <li>Ig : @muh.amirul_haq</li>
+      </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script>
+    				
+    				document.querySelector("#darkmode").addEventListener("click",()=>{
+
+if(document.querySelector("#darkmode").innerText === "Mode Gelap") {
+document.querySelector("#profilku").style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpS8QWyl9D3M268fGsZCCfZPEfZuzl70KBEkS_dhl1830B6ZL6I8hqcBjn&s=10')";
+document.querySelector("#programstudiku").style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpS8QWyl9D3M268fGsZCCfZPEfZuzl70KBEkS_dhl1830B6ZL6I8hqcBjn&s=10')";
+document.querySelector("#kontakku").style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAsUS1ayr9fga_8MLufrmI6h62wPr23BlQpXVivMte3_6egwneDRRc-To&s=10')";
+
+document.querySelector("#darkmode").innerText = "Mode Terang";	document.querySelector("#myportofolio").style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7hURuQQZNYYvh6gb6CTWMkwXeyGDxdEb7rWKn_LVcK67l4jixG4MLos&s=10')"; document.querySelector("#myportofolio").style.backgroundAttachment = "fixed";				
+document.querySelector("#myportofolio").style.color = "white";
+
+} else {
+
+document.querySelector("#profilku").style.backgroundImage = "url('https://i.pinimg.com/originals/f3/68/a8/f368a8f642d9aa7cb6ac1d4220ff3292.jpg')";
+document.querySelector("#programstudiku").style.backgroundImage = "url('https://i.pinimg.com/originals/f3/68/a8/f368a8f642d9aa7cb6ac1d4220ff3292.jpg')";
+document.querySelector("#kontakku").style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdQTKRWxqskBXPKXvSsUV6gAaqk9sW6fyr2g&usqp=CAU')";
+
+document.querySelector("#darkmode").innerText = "Mode Gelap";	document.querySelector("#myportofolio").style.backgroundImage = "url('https://wallpaperaccess.com/full/1657858.jpg')"; document.querySelector("#myportofolio").style.backgroundAttachment = "fixed";				
+document.querySelector("#myportofolio").style.color = "black";
+}
+
+});
+    				
+    </script>
+  </body>
+</html>
